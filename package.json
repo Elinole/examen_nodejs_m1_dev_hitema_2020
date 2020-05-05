@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
+    "start:rest": "node ./api/index.js",
+    "test": "jest ./node_modules/.bin/eslint \"./**/*.js\"",
+    "test:watch": "jest --watch ./node_modules/.bin/eslint \"./**/*.js\"",
     "eslint": "./node_modules/.bin/eslint \"./**/*.js\""
   },
   "author": "",
